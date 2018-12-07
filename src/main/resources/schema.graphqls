@@ -1,5 +1,6 @@
 schema {
     query: PageGraph
+    mutation: LinkMutation
 }
 
 type PageGraph {
@@ -15,3 +16,8 @@ type Link {
     url: String!
     description: String
 }
+
+type LinkMutation {
+    createLink(url: String!, description: String!): Link
+}
+
