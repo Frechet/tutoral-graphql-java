@@ -1,9 +1,9 @@
 schema {
-    query: Query
+    query: Page
 }
 
-type Query {
-    allLinks: [Link!]
+type Page {
+    links: [Link!]
 }
 
 type Link {
