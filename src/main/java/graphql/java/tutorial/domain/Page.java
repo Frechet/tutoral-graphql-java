@@ -1,21 +1,15 @@
 package graphql.java.tutorial.domain;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import java.util.List;
 
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class Page {
-    private final String name;
-    private final List<Long> linksIds;
-
-    public Page(String name, List<Long> linksIds) {
-        this.name = name;
-        this.linksIds = linksIds;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public List<Long> getLinksIds() {
-        return linksIds;
-    }
+    private String name;
+    private List<Long> linkIds;
 }

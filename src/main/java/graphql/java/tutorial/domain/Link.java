@@ -1,20 +1,14 @@
 package graphql.java.tutorial.domain;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class Link {
 
-    private final String url;
-    private final String description;
-
-    public Link(String url, String description) {
-        this.url = url;
-        this.description = description;
-    }
-
-    public String getUrl() {
-        return url;
-    }
-
-    public String getDescription() {
-        return description;
-    }
+    private String url;
+    private String description;
 }
